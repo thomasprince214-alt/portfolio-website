@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Thomas - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">Prince Thomas</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero">
+    <div class="container">
+        <h1>Prince Thomas</h1>
+        <p class="tagline">Full Stack Developer | MERN Stack Enthusiast</p>
+        <p class="subtitle">Building modern web applications with Node.js, MongoDB, and JavaScript</p>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a passionate full stack developer specializing in building scalable web applications. With expertise in the MERN stack (MongoDB, Express, React, Node.js), I create seamless user experiences connected to robust backends.</p>
+        <p>I'm continuously learning and staying updated with the latest technologies and best practices in web development.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div id="skillsList" class="skills-grid">
+            <!-- Skills will be loaded from API -->
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div id="projectsList" class="projects-grid">
+            <!-- Projects will be loaded from API -->
+        </div>
+        <div class="add-project-form">
+            <h3>Add a New Project</h3>
+            <form id="projectForm">
+                <input type="text" id="projectTitle" placeholder="Project Title" required>
+                <textarea id="projectDescription" placeholder="Project Description" required></textarea>
+                <input type="url" id="projectLink" placeholder="Project Link (optional)">
+                <input type="text" id="projectTech" placeholder="Technologies (comma-separated)" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Have a question or want to work together? Feel free to contact me!</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="messageStatus" class="message-status"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Prince Thomas. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
